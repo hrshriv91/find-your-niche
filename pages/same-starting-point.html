@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find people whose career paths began with questions and struggles that feel familiar to you.">
+  <meta name="theme-color" content="#fcfaff">
+  <title>Same Starting Point — Find Your Niche</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.min.css">
+  <script src="../js/app.min.js" defer></script>
+</head>
+<body>
+  <!-- Shared site navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html" aria-label="Find Your Niche home"><span class="brand-mark" aria-hidden="true">f.</span><span>find your niche</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="exam-explorer.html">Exam Explorer</a>
+        <a href="same-starting-point.html" aria-current="page">Same Starting Point</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="same-start-hero container">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> You’re not the only one finding your way</p>
+      <h1>Same Starting<br><em>Point.</em></h1>
+      <p class="same-start-lede">Career paths rarely begin with a perfect plan. Share what feels familiar, and we’ll find a few placeholder stories with something in common.</p>
+    </section>
+
+    <section class="matcher-section" id="match-form">
+      <div class="container matcher-container">
+        <div class="matcher-heading">
+          <div><p class="eyebrow">Find a familiar thread</p><h2>What’s been part<br><em>of your path?</em></h2></div>
+          <p>Choose a field, a few experiences, or both. Only share what feels comfortable. Your answers are used to find stories on this page.</p>
+        </div>
+        <div class="matcher-layout">
+          <form class="matcher-form" id="profile-match-form">
+            <label class="field-label" for="profile-field">Which field are you curious about?</label>
+            <select id="profile-field" name="field">
+              <option value="">Any field</option>
+              <option value="Tech">Tech</option>
+              <option value="Sports">Sports</option>
+              <option value="Business">Business</option>
+              <option value="Arts">Arts</option>
+              <option value="Science">Science</option>
+            </select>
+            <fieldset class="struggle-options">
+              <legend>Has any of this felt familiar?</legend>
+              <label><input type="checkbox" name="struggles" value="failed_exam"><span>Failed an important exam</span></label>
+              <label><input type="checkbox" name="struggles" value="late_start"><span>Felt behind compared to peers</span></label>
+              <label><input type="checkbox" name="struggles" value="rejected_often"><span>Faced a lot of rejection</span></label>
+              <label><input type="checkbox" name="struggles" value="career_pivot"><span>Changed direction later in life</span></label>
+              <label><input type="checkbox" name="struggles" value="first_gen"><span>First in my family to navigate this alone</span></label>
+            </fieldset>
+            <button class="button button-dark matcher-submit" type="submit">Find my matches <span aria-hidden="true">↗</span></button>
+          </form>
+          <aside class="matcher-aside">
+            <span class="aside-spark" aria-hidden="true">✳</span>
+            <p class="eyebrow">A note before you begin</p>
+            <h3>There’s no single<br>way through.</h3>
+            <p>These stories are here to help you feel less alone and more open to what could come next. Similarity doesn’t mean the same future.</p>
+            <span class="aside-caption">YOUR PATH IS STILL YOURS</span>
+          </aside>
+        </div>
+
+        <section class="match-results" id="match-results" aria-labelledby="match-results-title" aria-live="polite" hidden>
+          <div class="match-results-heading"><div><p class="eyebrow">A few stories to start with</p><h2 id="match-results-title" tabindex="-1">Your possible matches</h2></div><p id="match-message" class="match-message"></p></div>
+          <div class="profile-match-grid" id="profile-match-grid"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared site footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand footer-brand" href="../index.html"><span class="brand-mark" aria-hidden="true">f.</span><span>find your niche</span></a>
+      <p>A little more clarity.<br>A lot more you.</p>
+      <nav aria-label="Footer navigation"><a href="../index.html">Home</a><a href="resources.html">Resources</a><a href="exam-explorer.html">Exam Explorer</a><a href="same-starting-point.html">Same Starting Point</a><a href="about.html">About</a><a href="../affiliates.html">Affiliates</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+    </div>
+    <div class="container footer-bottom"><span>© <span data-year>2026</span> Find Your Niche. All rights reserved.</span><span>Harshit Shrivastava</span></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Take a gentle self-discovery quiz, then explore practical resources for your next career step.">
+  <meta name="theme-color" content="#fcfaff">
+  <title>Resources — Find Your Niche</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.min.css">
+  <script src="../js/app.min.js" defer></script>
+</head>
+<body>
+  <!-- Shared site navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html" aria-label="Find Your Niche home"><span class="brand-mark" aria-hidden="true">f.</span><span>find your niche</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="resources.html" aria-current="page">Resources</a>
+        <a href="exam-explorer.html">Exam Explorer</a>
+        <a href="same-starting-point.html">Same Starting Point</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="resources-hero container">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> A place to explore, at your pace</p>
+      <h1>You don’t need all<br>the answers <em>today.</em></h1>
+      <p class="resources-hero-copy">Start with a few questions about what feels like you. There are no scores to pass and no perfect career hiding at the end—just a couple of directions you might want to explore.</p>
+    </section>
+
+    <section class="quiz-section" aria-labelledby="quiz-title">
+      <div class="container quiz-container">
+        <div class="resources-content-layout">
+          <div class="resources-primary">
+        <div class="quiz-heading">
+          <div><p class="eyebrow">A small self-discovery quiz</p><h2 id="quiz-title">What might fit<br><em>the way you are?</em></h2></div>
+          <p>Choose what feels closest, even if more than one answer sounds like you. This is a starting point, not a label.</p>
+        </div>
+
+        <form class="career-quiz" id="career-quiz">
+          <p class="quiz-progress" id="quiz-progress" aria-live="polite">0 of 6 answered <span>Take your time. There are no wrong answers.</span></p>
+          <div class="quiz-questions">
+            <fieldset class="quiz-question">
+              <legend><span>01</span> What do you find yourself getting curious about?</legend>
+              <div class="quiz-options">
+                <label><input type="radio" name="q1" value="people"><span>People, relationships, and what helps us thrive</span></label>
+                <label><input type="radio" name="q1" value="ideas"><span>Big questions, stories, and how things work</span></label>
+                <label><input type="radio" name="q1" value="creative"><span>Making, designing, or bringing ideas to life</span></label>
+                <label><input type="radio" name="q1" value="systems"><span>Puzzles, patterns, and making things work better</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="quiz-question">
+              <legend><span>02</span> Which strength tends to come naturally to you?</legend>
+              <div class="quiz-options">
+                <label><input type="radio" name="q2" value="people"><span>Listening closely and helping people feel understood</span></label>
+                <label><input type="radio" name="q2" value="ideas"><span>Explaining a thought or making sense of information</span></label>
+                <label><input type="radio" name="q2" value="creative"><span>Imagining possibilities and making something tangible</span></label>
+                <label><input type="radio" name="q2" value="systems"><span>Organizing details and finding a clear way forward</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="quiz-question">
+              <legend><span>03</span> In a group project, which part would you enjoy most?</legend>
+              <div class="quiz-options">
+                <label><input type="radio" name="q3" value="people"><span>Helping the group work well together</span></label>
+                <label><input type="radio" name="q3" value="ideas"><span>Researching the topic and sharing what you find</span></label>
+                <label><input type="radio" name="q3" value="creative"><span>Creating the presentation, prototype, or final piece</span></label>
+                <label><input type="radio" name="q3" value="systems"><span>Making a plan and keeping the pieces on track</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="quiz-question">
+              <legend><span>04</span> What kind of workday sounds most comfortable?</legend>
+              <div class="quiz-options">
+                <label><input type="radio" name="q4" value="people"><span>A mix of conversations and working alongside others</span></label>
+                <label><input type="radio" name="q4" value="ideas"><span>Time to read, think, write, or learn something new</span></label>
+                <label><input type="radio" name="q4" value="creative"><span>Room to experiment and make things in different ways</span></label>
+                <label><input type="radio" name="q4" value="systems"><span>Clear priorities and a satisfying list to work through</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="quiz-question">
+              <legend><span>05</span> Which kind of challenge would you be glad to take on?</legend>
+              <div class="quiz-options">
+                <label><input type="radio" name="q5" value="people"><span>Helping someone feel supported through a hard moment</span></label>
+                <label><input type="radio" name="q5" value="ideas"><span>Untangling a complicated question or explaining it clearly</span></label>
+                <label><input type="radio" name="q5" value="creative"><span>Turning a rough idea into something people can experience</span></label>
+                <label><input type="radio" name="q5" value="systems"><span>Spotting a snag and making a process run more smoothly</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="quiz-question">
+              <legend><span>06</span> At the end of a good day, what would you hope to feel?</legend>
+              <div class="quiz-options">
+                <label><input type="radio" name="q6" value="people"><span>“I made someone’s day a little easier.”</span></label>
+                <label><input type="radio" name="q6" value="ideas"><span>“I understand something better than I did before.”</span></label>
+                <label><input type="radio" name="q6" value="creative"><span>“I made something I’m glad exists.”</span></label>
+                <label><input type="radio" name="q6" value="systems"><span>“I helped a lot of moving pieces come together.”</span></label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="quiz-submit-row">
+            <p class="quiz-hint" id="quiz-hint">Choose one answer for each question to see your ideas.</p>
+            <button class="button button-dark" type="submit" id="quiz-submit" disabled>See a few directions <span aria-hidden="true">↗</span></button>
+          </div>
+        </form>
+
+        <section class="quiz-result" id="quiz-result" aria-live="polite" aria-labelledby="quiz-result-title" hidden>
+          <p class="eyebrow">A few threads to follow</p>
+          <h2 id="quiz-result-title" tabindex="-1">There may be something here for you.</h2>
+          <p class="quiz-result-intro" id="quiz-result-intro"></p>
+          <div class="result-directions" id="result-directions"></div>
+          <p class="quiz-result-note">The quiz cannot tell you whether a field has openings or whether its day-to-day work will suit you. Use one direction to choose a sample task or conversation, then check training costs and entry requirements before committing.</p>
+          <div class="quiz-result-actions"><a class="button button-dark" href="#articles">Explore the guides <span aria-hidden="true">↘</span></a><button class="text-link quiz-reset" type="button" id="quiz-reset">Start over</button></div>
+        </section>
+        <!-- AD SLOT -->
+        <div class="ad-slot ad-slot-results" aria-label="Reserved advertisement space">
+          <span class="ad-slot-label">Advertisement</span>
+          <span class="ad-slot-note">Space reserved for a future ad</span>
+        </div>
+          </div>
+          <aside class="resources-sidebar" aria-label="Resources sidebar">
+            <div class="sidebar-note">
+              <p class="eyebrow">A gentle reminder</p>
+              <h3>You can explore one small thing at a time.</h3>
+              <p>Some school or application choices have real deadlines. Check those dates with an adviser; for other questions, try one small task or read a guide before deciding.</p>
+              <a class="text-link" href="same-starting-point.html">Find a familiar path <span aria-hidden="true">→</span></a>
+            </div>
+            <!-- AD SLOT -->
+            <div class="ad-slot ad-slot-sidebar" aria-label="Reserved advertisement space">
+              <span class="ad-slot-label">Advertisement</span>
+              <span class="ad-slot-note">Space reserved for a future ad</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-section container" id="articles" aria-labelledby="articles-title">
+      <div class="article-heading"><div><p class="eyebrow">For wherever you are right now</p><h2 id="articles-title">A little help for<br><em>the next part.</em></h2></div><p>Short, practical guides for the questions that can feel big when you’re holding them on your own.</p></div>
+      <div class="article-grid">
+        <article class="article-card article-card-blue"><span class="article-label">COMING SOON · EXPLORING</span><span class="article-icon" aria-hidden="true">⌁</span><h3>How to explore a career path without committing</h3><p>A short shadow, conversation, or sample task can answer specific questions, though none guarantees the work will suit you. Pick one low-cost test and note what you learn.</p><span class="article-read">A guide for trying things out</span></article>
+        <article class="article-card article-card-green"><span class="article-label">COMING SOON · REASSURANCE</span><span class="article-icon" aria-hidden="true">☼</span><h3>What to do when you feel behind</h3><p>Timelines vary, but prerequisites, fees, and application dates are real constraints. List the dates and credits that apply to you, then ask an adviser which options remain open.</p><span class="article-read">A guide for finding perspective</span></article>
+        <article class="article-card article-card-mist"><span class="article-label">COMING SOON · STUDYING</span><span class="article-icon" aria-hidden="true">◌</span><h3>Switching majors: a survival guide</h3><p>A change can affect credits, graduation time, financial aid, or visa status. Request a degree audit and aid review first, and ask whether electives or a minor could meet the same need.</p><span class="article-read">A guide for considering a change</span></article>
+        <article class="article-card article-card-mist"><span class="article-label">COMING SOON · SELF-DISCOVERY</span><span class="article-icon" aria-hidden="true">✳</span><h3>How to notice your strengths</h3><p>Look for evidence in completed work, specific feedback, or tasks you learned quickly. Ask two people for one example, then look for roles that use that skill.</p><span class="article-read">A guide for seeing what’s already there</span></article>
+        <article class="article-card article-card-blue"><span class="article-label">COMING SOON · INTERESTS</span><span class="article-icon" aria-hidden="true">✧</span><h3>When you have too many interests</h3><p>You do not have to turn every interest into a job; income, training, and daily tasks differ by path. Choose one low-cost project to test this month, and keep another interest outside work if that fits.</p><span class="article-read">A guide for following a thread</span></article>
+        <article class="article-card article-card-green"><span class="article-label">COMING SOON · CONVERSATIONS</span><span class="article-icon" aria-hidden="true">↗</span><h3>How to talk to someone about their career</h3><p>One person’s route is an example, not a forecast of yours. Ask about a typical week, entry requirements, trade-offs, and what they would test before investing in a course.</p><span class="article-read">A guide for learning from others</span></article>
+      </div>
+      <p class="article-footer-note">You don’t have to read everything. Choose the question that feels most useful today.</p>
+    </section>
+  </main>
+
+  <!-- Shared site footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand footer-brand" href="../index.html"><span class="brand-mark" aria-hidden="true">f.</span><span>find your niche</span></a>
+      <p>A little more clarity.<br>A lot more you.</p>
+      <nav aria-label="Footer navigation"><a href="../index.html">Home</a><a href="resources.html">Resources</a><a href="exam-explorer.html">Exam Explorer</a><a href="same-starting-point.html">Same Starting Point</a><a href="about.html">About</a><a href="../affiliates.html">Affiliates</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+    </div>
+    <div class="container footer-bottom"><span>© <span data-year>2026</span> Find Your Niche. All rights reserved.</span><span>Harshit Shrivastava</span></div>
+  </footer>
+</body>
+</html>

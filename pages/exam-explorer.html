@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore example entrance and competitive exams by region, study background, and area of interest.">
+  <meta name="theme-color" content="#fcfaff">
+  <title>Exam Explorer — Find Your Niche</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.min.css">
+  <script src="../js/app.min.js" defer></script>
+</head>
+<body>
+  <!-- Shared site navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="../index.html" aria-label="Find Your Niche home"><span class="brand-mark" aria-hidden="true">f.</span><span>find your niche</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="exam-explorer.html" aria-current="page">Exam Explorer</a>
+        <a href="same-starting-point.html">Same Starting Point</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="exam-hero page-hero container">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> Explore one route at a time</p>
+      <h1>Which exams might<br><em>be worth exploring?</em></h1>
+      <p class="page-lede">Choose where you’re looking, where you are in your studies, and what interests you. We’ll offer a few starting points—not a verdict on what you should do.</p>
+    </section>
+
+    <section class="exam-explorer-area">
+      <div class="container exam-explorer-container">
+        <div class="exam-intro-row">
+          <div><p class="eyebrow">A short, three-step guide</p><h2>Let’s find a place<br><em>to start.</em></h2></div>
+          <p>Different exams suit different stages and goals. This starter guide helps you narrow the search without needing to know every detail up front.</p>
+        </div>
+
+        <aside class="exam-example-disclaimer" aria-label="Important information about these examples">
+          <span class="disclaimer-mark" aria-hidden="true">i</span>
+          <p><strong>Starter examples, not final guidance.</strong> The list is intentionally small and must be fact-checked and expanded. Exams, eligibility, dates, patterns, and university policies can change. Confirm current details with the official source and each institution.</p>
+        </aside>
+
+        <div class="exam-wizard" id="exam-explorer">
+          <div class="exam-progress-head"><p id="exam-progress-label" aria-live="polite">Step 1 of 3 · Country or region</p><span>Take it one choice at a time</span></div>
+          <ol class="exam-progress" aria-label="Exam Explorer progress">
+            <li data-progress-step="country" class="is-current" aria-current="step"><span>01</span><span>Place</span></li>
+            <li data-progress-step="background"><span>02</span><span>Study stage</span></li>
+            <li data-progress-step="field"><span>03</span><span>Interest</span></li>
+          </ol>
+
+          <div class="exam-steps">
+            <section class="exam-step" data-step-panel="country" aria-labelledby="exam-country-title">
+              <p class="exam-step-kicker">STEP 1</p>
+              <h2 id="exam-country-title">Where are you hoping to study?</h2>
+              <p class="exam-step-copy">Pick a country or region to begin. You can still explore regions with no examples in the starter list yet.</p>
+              <div class="exam-choice-grid exam-country-grid" role="group" aria-label="Choose a country or region"></div>
+            </section>
+
+            <section class="exam-step" data-step-panel="background" aria-labelledby="exam-background-title" hidden>
+              <p class="exam-step-kicker">STEP 2</p>
+              <h2 id="exam-background-title">What best describes your study stage?</h2>
+              <p class="exam-step-copy">Choose the closest option. Local school systems use different names, so the wording is a guide.</p>
+              <div class="exam-choice-grid exam-background-grid" id="exam-background-choices" role="group" aria-label="Choose your current study background"></div>
+            </section>
+
+            <section class="exam-step" data-step-panel="field" aria-labelledby="exam-field-title" hidden>
+              <p class="exam-step-kicker">STEP 3</p>
+              <h2 id="exam-field-title">What area would you like to explore?</h2>
+              <p class="exam-step-copy">Choose what feels interesting right now. You can change your mind later.</p>
+              <div class="exam-choice-grid exam-field-grid" id="exam-field-choices" role="group" aria-label="Choose an area of interest"></div>
+            </section>
+          </div>
+
+          <div class="exam-step-controls">
+            <button class="button button-light" type="button" id="exam-back" hidden><span aria-hidden="true">←</span> Back</button>
+            <p id="exam-step-hint" aria-live="polite">Choose the place you’re considering. You can explore a region even if examples are still being added.</p>
+          </div>
+        </div>
+
+        <section class="exam-results" id="exam-results" aria-labelledby="exam-results-title" aria-live="polite" hidden>
+          <div class="exam-results-heading">
+            <div><p class="eyebrow">Your exploration route</p><h2 id="exam-results-title" tabindex="-1">A few routes to explore</h2></div>
+            <button class="text-link exam-edit" type="button" id="exam-edit">Change answers <span aria-hidden="true">↗</span></button>
+          </div>
+
+          <div class="exam-pathway" role="group" aria-label="Selected study background leads to example exams and area of interest">
+            <div class="pathway-node"><span>YOUR STUDY STAGE</span><strong id="pathway-background"></strong></div>
+            <span class="pathway-connector" aria-hidden="true">→</span>
+            <div class="pathway-node pathway-node-highlight"><span>EXAMPLE EXAM(S)</span><strong id="pathway-exams"></strong></div>
+            <span class="pathway-connector" aria-hidden="true">→</span>
+            <div class="pathway-node"><span>POSSIBLE FIELD</span><strong id="pathway-field"></strong></div>
+          </div>
+
+          <p class="exam-results-note" id="exam-results-note"></p>
+          <div class="exam-result-grid" id="exam-result-grid"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared site footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand footer-brand" href="../index.html"><span class="brand-mark" aria-hidden="true">f.</span><span>find your niche</span></a>
+      <p>A little more clarity.<br>A lot more you.</p>
+      <nav aria-label="Footer navigation"><a href="../index.html">Home</a><a href="resources.html">Resources</a><a href="exam-explorer.html" aria-current="page">Exam Explorer</a><a href="same-starting-point.html">Same Starting Point</a><a href="about.html">About</a><a href="../affiliates.html">Affiliates</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+    </div>
+    <div class="container footer-bottom"><span>© <span data-year>2026</span> Find Your Niche. All rights reserved.</span><span>Harshit Shrivastava</span></div>
+  </footer>
+</body>
+</html>

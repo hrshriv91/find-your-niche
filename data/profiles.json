@@ -1,0 +1,50 @@
+[
+  {
+    "id": "steve-jobs-tech",
+    "name": "Steve Jobs",
+    "field": "Tech",
+    "struggle_tags": ["career_pivot"],
+    "summary": "After a boardroom power struggle, Jobs left Apple in 1985. He founded NeXT and led Pixar after acquiring its graphics division; Apple bought NeXT in 1996, and Jobs returned to Apple. For a pivot of your own, map which skills transfer and compare the training, time, and cost of the adjacent field before starting over.",
+    "image_placeholder": { "initials": "SJ", "color": "#dcebe5" }
+  },
+  {
+    "id": "stephen-curry-sports",
+    "name": "Stephen Curry",
+    "field": "Sports",
+    "struggle_tags": ["rejected_often"],
+    "summary": "Curry's size led major college basketball programs to pass on him, while Davidson offered him a place. He became Davidson's leading scorer and later an NBA champion and multiple-time MVP with Golden State. A student facing similar recruiting setbacks can ask coaches for specific development feedback and compare programs on playing time, coaching, and support.",
+    "image_placeholder": { "initials": "SC", "color": "#e0eaf0" }
+  },
+  {
+    "id": "sara-blakely-business",
+    "name": "Sara Blakely",
+    "field": "Business",
+    "struggle_tags": ["career_pivot"],
+    "summary": "While working in sales, Blakely developed an idea for footless hosiery and contacted many potential manufacturers; her most promising prospect initially rejected it before changing his mind. She patented the design and launched Spanx, which grew into a widely known apparel company, though turning an idea into a product also required manufacturing and distribution. For a similar idea, test buyer interest and production costs before taking on major expense.",
+    "image_placeholder": { "initials": "SB", "color": "#e4ede8" }
+  },
+  {
+    "id": "vera-wang-arts",
+    "name": "Vera Wang",
+    "field": "Arts",
+    "struggle_tags": ["career_pivot", "late_start"],
+    "summary": "Wang trained for years hoping to become an Olympic figure skater, but did not make the 1968 U.S. team; she shifted into fashion publishing and spent 16 years at Vogue before becoming a design director at Ralph Lauren. At 40, she opened a bridal salon and launched her own label. Anyone weighing a pivot can first map transferable skills and the time and cost of training instead of assuming a later start makes a route easy or impossible.",
+    "image_placeholder": { "initials": "VW", "color": "#e1ece7" }
+  },
+  {
+    "id": "albert-einstein-science",
+    "name": "Albert Einstein",
+    "field": "Science",
+    "struggle_tags": ["failed_exam"],
+    "summary": "At 16, Einstein did not pass the full entrance exam for Zurich Polytechnic, though he did well in mathematics and physics; after further schooling in Aarau, he passed the Matura and entered the Polytechnic. His later scientific recognition followed years of formal study and research, not one exam result. If an exam goes badly, review subject-level gaps with a teacher and check retake or alternate-entry options.",
+    "image_placeholder": { "initials": "AE", "color": "#e2ebef" }
+  },
+  {
+    "id": "jose-hernandez-science",
+    "name": "José Hernández",
+    "field": "Science",
+    "struggle_tags": ["first_gen", "rejected_often"],
+    "summary": "Hernández was the first in his family to attend college, and NASA rejected his astronaut applications 11 times before selecting him in 2004; he later flew on Space Shuttle Discovery. Astronaut selection is exceptionally narrow, so students interested in space can also explore engineering, mission operations, and research roles and compare the qualification routes for each.",
+    "image_placeholder": { "initials": "JH", "color": "#dce8ee" }
+  }
+]
